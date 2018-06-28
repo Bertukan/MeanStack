@@ -19,7 +19,7 @@ const fs = require('fs')
 
 server.createServer(function(req,res){
     fs.readFile('animal.jpg', function(err, data) {
-        var b
+       
         res.writeHead(200,{'Content-Type':'image/jpg'});
         res.write(data);
         res.end();
