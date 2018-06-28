@@ -1,4 +1,5 @@
 
+// using asycn await
 const {promisify} = require('util')
 const dns = require('dns')
 const res = promisify(dns.resolve4);

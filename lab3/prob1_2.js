@@ -1,7 +1,8 @@
-// const dns = require('dns')
-// const {promisify} = require('util')
-// const res = promisify(dns.resolve4);
-//  res('www.mum.edu').then((add)=>{console.log(add);}).catch(err=>console.log(err))
+// using changing the callback to promisify
+const dns = require('dns')
+const {promisify} = require('util')
+const res = promisify(dns.resolve4);
+ res('www.mum.edu').then((add)=>{console.log(add);}).catch(err=>console.log(err))
 
 
 
