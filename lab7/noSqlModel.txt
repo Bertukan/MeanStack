@@ -1,0 +1,19 @@
+
+
+Collection : Book 
+{
+"ISBN" : "35433"
+"tags" :"Medical"
+"Title" : "java 8"
+"authors": [
+    	{"name" : 'Mr.A', Adress :"IA"},
+    	{"name" : 'Mr.B', Adress :"FL"}
+			]
+"CheckoutRecord": [
+        {  "checkoutDate" :"01/02/18",
+           "Student" : { name: "Bertukan", id :"234"},
+           "returnDate":"01/03/18"
+        }
+]
+
+}
