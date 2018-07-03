@@ -34,7 +34,7 @@ MongoClient.connect(url, function(err, db) {
     myresult=result.message;
     db.close();
   });
-  console.dir("Called findOne!")
+ 
 });
 
 app.get('/secret', function(req,res){
