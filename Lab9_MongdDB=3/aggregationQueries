@@ -1,0 +1,6 @@
+Queries for lab 8
+
+1.db.zip.aggregate([{$match:{state:"IA"}}, {$group:{_id:"$state", ZipCodes :{$addToSet:"$_id"}}}]).pretty()
+2.db.zip.aggregate([{ $match:{pop:{$lt:1000}} }]).pretty()
+3.db.zip.aggregate([{$group:{_id:{state:"$state",city:"$city"}, ZipCodes :{$sum:1}}},{$match:{ZipCodes:{$gt:1}}},{$sort:{"id.state":1,"id.city":1}}])
+4.db.zip.aggregate([{$group:{_id:{state:"$state",city:"$city"}}}, {$sort:{"_id.state":1,"pop":1}},{$group:{_id:"$_id.state",city:{$first:"$_id.city"}}},{$sort:{"_id":1}}])
