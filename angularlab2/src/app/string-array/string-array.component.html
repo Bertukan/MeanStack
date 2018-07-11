@@ -1,0 +1,17 @@
+
+
+<p>
+  string-array works!
+
+</p>
+<input #txt type="text">
+<button (click)="insertData(txt.value)">insert</button>
+<h1>Users</h1>
+<ul>
+  <li *ngFor="let data of data">
+    {{ data }}
+  </li>
+</ul>
+<p *appMyVisibility="false">hey </p>
+
+
